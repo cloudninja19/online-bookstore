@@ -7,6 +7,7 @@ const path = require('path');
 const app = express();
 
 // MongoDB Connection - local database
+const MONGODB_URI = 'mongodb://localhost:27017/bookstore';
 
 mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,
